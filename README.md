@@ -1,154 +1,163 @@
-# makanaitabeta.github.io<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>音のプラットフォーム</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hot Music Picks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #f2f2f2;
-      color: #333;
+      font-family: 'Outfit', sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background: linear-gradient(to right, #ff512f, #dd2476);
+      padding: 30px 20px;
+      text-align: center;
     }
 
     header h1 {
-      font-size: 24px;
-      letter-spacing: 1px;
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: 800;
+    }
+
+    nav {
+      background: #1a1a1a;
+      padding: 15px 20px;
+      text-align: center;
     }
 
     nav a {
-      color: #fff;
-      margin-left: 20px;
+      color: #ffffff;
+      margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: color 0.3s;
     }
 
-    .hero {
-      background-color: #ccc;
-      padding: 60px 40px;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
+    nav a:hover {
+      color: #ff6f91;
     }
 
     .section {
-      padding: 40px;
-      background-color: #fff;
-      margin: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 50px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      border-bottom: 1px solid #333;
     }
 
     .section h3 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #ff6f91;
     }
 
-    .tracks {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+    .section a {
+      font-size: 14px;
+      color: #ccc;
+      text-decoration: underline;
     }
 
     .track {
-      background-color: #eee;
+      background: #1e1e1e;
+      margin: 15px 0;
       padding: 20px;
-      border-radius: 6px;
-      flex: 1 1 200px;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+    .track:hover {
+      background: #2a2a2a;
     }
 
     .track h4 {
-      margin: 0 0 10px;
+      margin: 0;
+      font-size: 1.2em;
+      color: #ffffff;
+    }
+
+    .track p {
+      margin: 5px 0 0;
+      color: #aaa;
     }
 
     footer {
-      background-color: #333;
-      color: #aaa;
+      background: #1a1a1a;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>音のプラットフォーム</h1>
-    <nav>
-      <a href="#hot">Hot</a>
-      <a href="#trending">Trending</a>
-      <a href="#next">Next Up</a>
-    </nav>
-  </header>
+<header>
+  <h1>今バズってる音楽まとめ</h1>
+</header>
 
-  <section class="hero">
-    <h2>今の音、未来の音</h2>
-    <p>音楽のトレンドを、ここからチェックしよう。</p>
-  </section>
+<nav>
+  <a href="#hot">Hot Tracks</a>
+  <a href="#trending">Now Trending</a>
+  <a href="#next">Next Up</a>
+</nav>
 
-  <section class="section" id="hot">
-    <h3>Hot Tracks（今バズってる曲）</h3>
-    <div class="tracks">
-      <div class="track">
-        <h4>アーティストA - 曲名1</h4>
-        <p>Spotify急上昇中</p>
-      </div>
-      <div class="track">
-        <h4>アーティストB - 曲名2</h4>
-        <p>TikTokでバズり中</p>
-      </div>
+<section class="section" id="hot">
+  <h3>Hot Tracks（今バズってる曲）
+    <a href="https://spotifycharts.com/regional/jp/daily/latest" target="_blank">Spotifyチャートを見る</a>
+  </h3>
+  <div class="tracks">
+    <div class="track">
+      <h4>アーティストA - 曲名1</h4>
+      <p>Spotify急上昇中</p>
     </div>
-  </section>
-
-  <section class="section" id="trending">
-    <h3>Now Trending（安定の人気）</h3>
-    <div class="tracks">
-      <div class="track">
-        <h4>アーティストC - 曲名3</h4>
-        <p>チャート上位をキープ</p>
-      </div>
-      <div class="track">
-        <h4>アーティストD - 曲名4</h4>
-        <p>定番プレイリスト入り</p>
-      </div>
+    <div class="track">
+      <h4>アーティストB - 曲名2</h4>
+      <p>TikTokでバズり中</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section" id="next">
-    <h3>Next Up（これから来る）</h3>
-    <div class="tracks">
-      <div class="track">
-        <h4>アーティストE - 曲名5</h4>
-        <p>インディーズシーンで話題</p>
-      </div>
-      <div class="track">
-        <h4>アーティストF - 曲名6</h4>
-        <p>音楽系YouTuberが注目</p>
-      </div>
+<section class="section" id="trending">
+  <h3>Now Trending（安定の人気）
+    <a href="https://www.billboard-japan.com/charts/detail?a=hot100" target="_blank">Billboard Japanをチェック</a>
+  </h3>
+  <div class="tracks">
+    <div class="track">
+      <h4>アーティストC - 曲名3</h4>
+      <p>チャート上位をキープ</p>
     </div>
-  </section>
+    <div class="track">
+      <h4>アーティストD - 曲名4</h4>
+      <p>定番プレイリスト入り</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 音のプラットフォーム | お問い合わせ | 利用規約
-  </footer>
+<section class="section" id="next">
+  <h3>Next Up（これから来る）
+    <a href="https://soundcloud.com/discover" target="_blank">SoundCloud新着を探索</a>
+  </h3>
+  <div class="tracks">
+    <div class="track">
+      <h4>アーティストE - 曲名5</h4>
+      <p>インディーズシーンで話題</p>
+    </div>
+    <div class="track">
+      <h4>アーティストF - 曲名6</h4>
+      <p>音楽系YouTuberが注目</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Music Trends. All rights reserved.
+</footer>
 
 </body>
 </html>
